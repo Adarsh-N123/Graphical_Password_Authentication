@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <h3>
+        <div id="left"><a href="Loginpage.html" id="one">Login</a></div>
+        <div id="right">Signup</div>
+        </h3>
+        <p>
+            <form action="signup.php">
+                <div >
+                    <input class="form" type="email" name="name" id="name"  placeholder="&#9993; Email id">
+                </div>
+                <div class="centre">
+                    
+                    <input class="form" type="password" name="password" id="pass"  placeholder="&#128274; Create Password" required>
+                    <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;color: white;" onclick="myFunction()"></i>
+                </div>
+                <div class="centre">
+                    
+                    <input class="form" type="password" name="confirmpassword" id="pass1"  placeholder="&#128274; Confirm Password" style="margin-left: 95px;" required>
+                    <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;color: white;" onclick="myFunction1()"></i>
+                </div>
+                <div>
+                    <p style="color: white; margin-left: 200px; margin-top: 20px;">PASSWORD STRENGTH:</p>
+                    <span id="StrengthDisp" class="badge displayBadge" style="color:red; margin-left: 270px;"></span>
+        
+                </div>
+                <div>
+                    <input type="submit" name="submit" id="submit" value="Signup" onclick="validate()">
+                </div>
+            </form>
+        </p>
+    </section>
+    <script src="signup.js"></script>
+</body>
+</html>

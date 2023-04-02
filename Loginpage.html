@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Loginpage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <h3>
+        <div id="left">Login</div>
+        <div id="right"><a href="signup.html" id="one">Signup</a></div>
+        </h3>
+        <p>
+            
+            <form action="login.php">
+                <div class="centre" >
+                    <input class="form" type="email" name="username" id="name"  placeholder="&#9993; Email id">
+                </div>
+                <div class="input-box">
+                    <input class="form" type="text" name="password" id="pass"  placeholder="&#128274; Password">
+                    
+                    <i class="far fa-eye" id="togglePassword" style="margin-left: 0px; cursor: pointer;color: white;" onclick="myFunction()"></i>
+                    
+                </div>
+                <div id="rem">
+                    <input type="checkbox" name="remember" id="rem">
+                    <label for="rem"> Remember me</label> 
+                    <a href="forgot.html" id="forgot" target="_blank">Forgot password</a>
+                </div>
+                <div>
+                    <input type="submit" name="submit" id="submit" value="Login">
+                </div>
+            </form>
+        </p>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>
